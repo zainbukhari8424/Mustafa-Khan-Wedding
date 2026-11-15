@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Mustafa Khan's Weeding </title>
+    <meta name="description" content="You are cordially invited to celebrate the wedding of Mustafa Khan on December 05, 2026 (25 Jumada Al-Thani 1448 AH) at 8:00 PM at PCSIR Phase 2.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@200;300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-en">
+    <!-- 1. Ultra-Luxurious Photo-Replica Physical Envelope Intro with Plain Red Wax Seal (AM) -->
+    <div id="envelope-overlay" class="envelope-overlay">
+        <div class="envelope-container">
+            <div class="photo-replica-envelope" id="physical-envelope">
+                
+                <!-- Main Embossed Damask Envelope Pocket -->
+                <div class="envelope-body-pocket"></div>
+
+                <!-- Pointed V Flap -->
+                <div class="photo-envelope-flap">
+                    <div class="flap-pattern"></div>
+                </div>
+
+                <!-- Plain Red Wax Seal Stamped with AM -->
+                <div class="plain-red-wax-seal" id="open-envelope-btn" title="Tap Seal to Open Invitation">
+                    <div class="wax-seal-deboss">
+                        <span class="wax-am-monogram">MH</span>
+                    </div>
+                </div>
+
+                <!-- Subtle Opening Hint -->
+                <div class="envelope-open-hint">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span data-en="Tap Red Seal to Open" data-ar="اضغط على الختم الأحمر لفتح الدعوة">Tap Red Seal to Open</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ambient Floating Dust Canvas -->
+    <canvas id="ambient-particles"></canvas>
+
+    <!-- Floating Audio Control -->
+    <div class="audio-control-container">
+        <button id="music-toggle-btn" aria-label="Toggle Music" class="glass-btn" type="button">
+            <i class="fas fa-music"></i>
+            <span class="music-label" data-en="Play Music" data-ar="الموسيقى">Play Music</span>
+        </button>
+    </div>
+
+    <!-- Place the licensed audio file named thank-you-my-lord.mp3 beside index.html. -->
+    <audio id="wedding-background-music" preload="metadata">
+        <source src="thank-you-my-lord.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Landing Page Header with Language Switcher -->
+    <header class="landing-header">
+        <div class="header-logo">M&H</div>
+        
+        <div class="header-actions">
+            <!-- Language Switcher Button -->
+            <!-- <button id="lang-toggle-btn" class="lang-switch-btn">
+                <i class="fas fa-globe"></i>
+                <span id="lang-label">العربية</span>
+            </button> -->
+
+            <a href="#rsvp" class="header-rsvp-btn">
+                <span data-en="RSVP" data-ar="تأكيد الحضور">RSVP</span>
+                <i class="fas fa-heart"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Landing Page Container -->
+    <main class="landing-main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content">
+                <div class="monogram-badge">
+                    <span class="monogram">M & H</span>
+                </div>
+                
+                <!-- Quranic Verse Kept Permanent -->
+                <p class="hero-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+                <p class="hero-quran-verse">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
+                
+                <p class="hero-subtitle" data-en="Together with their families" data-ar="يتشرفان بدعوتكم لحضور حفل الزفاف">Together with their families</p>
+                
+                <h1 class="hero-title">
+                    <span class="name groom" data-en="Mustafa Khan" data-ar="م. عبدالله">Mustafa Khan</span>
+                    <span class="ampersand"></span>
+                    <span class="name bride" data-en="" data-ar="د. M"></span>
+                </h1>
+                
+                <p class="hero-tagline" data-en="invite you to celebrate his wedding" data-ar="يدعونكم لمشاركتهم فرحة العمر">invite you to celebrate his Walima Ceremony</p>
+                
+                <div class="hero-date-location">
+                    <div class="info-pill">
+                        <i class="far fa-calendar-alt"></i>
+                        <span data-en="Saturday, 05 December 2026" data-ar="السبت 22 أغسطس 2026 م">Saturday, 05 December 2026</span>
+                    </div>
+                    <div class="info-pill">
+                        <i class="far fa-moon"></i>
+                        <span data-en="25 Jumada Al-Thani 1448 AH25 Jumada Al-Thani 1448 AH" data-ar="8 صفر 1448 هـ">25 Jumada Al-Thani 1448 AH</span>
+                    </div>
+                    <div class="info-pill">
+                        <i class="far fa-clock"></i>
+                        <span data-en="8:00 PM" data-ar="7:00 مساءً">7:00 PM</span>
+                    </div>
+                    <div class="info-pill">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-en="Qazi Kauser Park PCSIR Phase 2" data-ar="نادي الأطباء">PCSIR 2</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta-group">
+                    <a href="#rsvp" class="btn btn-primary">
+                        <span data-en="RSVP Now" data-ar="تأكيد الحضور">RSVP Now</span>
+                        <i class="fas fa-envelope-open-text"></i>
+                    </a>
+                    <button id="add-to-calendar-btn" class="btn btn-outline">
+                        <i class="far fa-calendar-plus"></i>
+                        <span data-en="Add to Calendar" data-ar="إضافة للتقويم">Add to Calendar</span>
+                    </button>
+                </div>
+            </div>
+            
+            <a href="#countdown" class="scroll-down-indicator" aria-label="Scroll Down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown" class="countdown-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow" data-en="The Countdown" data-ar="العد التنازلي">The Countdown</span>
+                    <h2 class="section-title" data-en="Counting Down To 8:00 PM" data-ar="متبقي على ليلة العمر">Counting Down To 8:00 PM</h2>
+                    <div class="golden-divider"><span>❖</span></div>
+                </div>
+
+                <div class="timer-grid">
+                    <div class="timer-card glass-card">
+                        <div class="timer-circle">
+                            <span id="days" class="timer-value">00</span>
+                        </div>
+                        <span class="timer-label" data-en="Days" data-ar="يوم">Days</span>
+                    </div>
+                    <div class="timer-card glass-card">
+                        <div class="timer-circle">
+                            <span id="hours" class="timer-value">00</span>
+                        </div>
+                        <span class="timer-label" data-en="Hours" data-ar="ساعة">Hours</span>
+                    </div>
+                    <div class="timer-card glass-card">
+                        <div class="timer-circle">
+                            <span id="minutes" class="timer-value">00</span>
+                        </div>
+                        <span class="timer-label" data-en="Minutes" data-ar="دقيقة">Minutes</span>
+                    </div>
+                    <div class="timer-card glass-card">
+                        <div class="timer-circle">
+                            <span id="seconds" class="timer-value">00</span>
+                        </div>
+                        <span class="timer-label" data-en="Seconds" data-ar="ثانية">Seconds</span>
+                    </div>
+                </div>
+                
+                <p class="timer-target-date">
+                    <i class="far fa-clock"></i> <span data-en="Target: Saturday, December 05, 2026 (25 Jumada Al-Thani 1448 AH25 Jumada Al-Thani 1448 AH) at 8:00 PM" data-ar="موعد الحفل: السبت 9 صفر 1448 هـ (22 أغسطس 2026 م) • الساعة 7:00 مساءً">Target: Saturday, December 05, 2026 (25 Jumada Al-Thani 1448 AH) at 7:00 PM</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Groom & Bride Section -->
+        <section id="couple" class="couple-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow" data-en="Our Story" data-ar="العروسان"></span>
+                    <h2 class="section-title" data-en="Groom & Bride" data-ar="م. عبدالله & د. M">WALIMA CEREMONY   </h2>
+                    <div class="golden-divider"><span>❖</span></div>
+                </div>
+
+                <div class="couple-content-grid">
+                    <div class="couple-card groom-card glass-card">
+                        <div class="card-role" data-en="The Groom" data-ar="العريس">The Groom</div>
+                        <h3 class="card-name" data-en="Mustafa Khan" data-ar="م. عبدالله"></h3>
+                        <p class="card-desc" data-en='"Every love story is beautiful, but ours is my absolute favorite. Looking forward to starting this incredible lifelong adventure together."' data-ar='"أجمل حكاية تبدأ بالحب وتكتمل بوجود أغلى الأحباب معنا في ليلتنا المميّزة."'>"Every love story is beautiful, but ours is my absolute favorite. Looking forward to starting this incredible lifelong adventure together."</p>
+                    </div>
+
+                    <div class="couple-image-container">
+                        <div class="image-frame">
+                            <img src="images/couple.jpg" alt="Mustafa Khan " class="couple-img">
+                            <div class="frame-border"></div>
+                        </div>
+                    </div>
+
+                    <div class="couple-card bride-card glass-card">
+                        <div class="card-role" data-en="The Bride" data-ar="العروس">The Bride</div>
+                        <h3 class="card-name" data-en="Dr. M" data-ar="د. M"></h3>
+                        <p class="card-desc" data-en='"Hand in hand, heart to heart, from this day forward. Excited to celebrate our special day with all the people we hold dear."' data-ar='"يدًا بيد، ونحو عمرٍ جديد ننسجه بالود والمحبة.. نسعد بمشاركتكم فرحتنا."'>"Hand in hand, heart to heart, from this day forward. Excited to celebrate our special day with all the people we hold dear."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section id="details" class="details-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow" data-en="Where & When" data-ar="المكان والزمان">Where &amp; When</span>
+                    <h2 class="section-title" data-en="Event Details" data-ar="تفاصيل الحفل">Event Details</h2>
+                    <div class="golden-divider"><span>❖</span></div>
+                </div>
+
+                <div class="details-grid">
+                    <div class="detail-card glass-card">
+                        <div class="detail-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <h3 data-en="Date & Time" data-ar="التاريخ والموعد">Date &amp; Time</h3>
+                        <p class="highlight-text" data-en="Saturday, December 05, 2026" data-ar="السبت 22 أغسطس 2026 م">Saturday, December 05, 2026</p>
+                        <p class="highlight-text" data-en="8 Safar 1448 AH" data-ar="8 صفر 1448 هـ">25 Jumada Al-Thani 1448 AH</p>
+                        <p data-en="Ceremony Begins: 8:00 PM" data-ar="بداية الحفل: الساعة 8:00 مساءً">Ceremony Begins: 7:00 PM</p>
+                        <p data-en="Dinner & Celebration: 09:00 PM" data-ar="العشاء والاحتفال: 10:30 مساءً">Dinner &amp; Celebration: 9:00 PM</p>
+                    </div>
+
+                    <div class="detail-card glass-card venue-card-main">
+                        <div class="venue-image-wrapper">
+                            <img src="images/venue (2).jpg" alt="Qazi Kauser Park Phase 2 Venue" class="venue-img">
+                        </div>
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <h3 data-en="The Venue" data-ar="مكان الحفل">The Venue</h3>
+                        <p class="highlight-text" data-en="Qazi Kauser Park Phase 2" data-ar="نادي الأطباء (Qazi Kauser Park PCSIR Phase 2)">Qazi Kauser Park PCSIR Phase 2</p>
+                        <p class="address-text" data-en="Qazi Qauser Park, PCSIR Phase 2 " data-ar="القاعة الرئيسية - شارع نادي الأطباء">Qazi Qauser Park, PCSIR Phase 2 </p>
+                        
+                        <div class="venue-actions">
+                            <a href="https://maps.app.goo.gl/ozCcCxxA4USmRRwE8" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                <i class="fas fa-directions"></i> <span data-en="Get Directions" data-ar="الاتجاهات على الخريطة">Get Directions</span>
+                            </a>
+                            <button id="copy-address-btn" class="btn btn-sm btn-outline">
+                                <i class="far fa-copy"></i> <span data-en="Copy Address" data-ar="نسخ العنوان">Copy Address</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="detail-card glass-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 data-en="Dress Code" data-ar="الزي المقترح">Groom's Side</h3>
+                        <p class="highlight-text" data-en="Black Tie / Formal" data-ar="رسمي / Formal Black Tie">Mr & Mr's Amir Khan and Family</p>
+                        <p data-en="Elegance and glamor requested. Dress your best for an unforgettable evening!" data-ar="حضوركم يكتمل بأناقتكم لتكتمل فرحتنا في هذه الليلة الاستثنائية."><b>Muhammad Khan 0325-8810560</b></p>
+                        <p data-en="Elegance and glamor requested. Dress your best for an unforgettable evening!" data-ar="حضوركم يكتمل بأناقتكم لتكتمل فرحتنا في هذه الليلة الاستثنائية."><b>Ibrahim Khan    0316-4655485</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Timeline Section (Redesigned Grid for Perfectly Centered Dots) -->
+        <section id="timeline" class="timeline-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow" data-en="Schedule" data-ar="البرنامج">Schedule</span>
+                    <h2 class="section-title" data-en="Program Timeline" data-ar="فقرات الحفل">Program Timeline</h2>
+                    <div class="golden-divider"><span>❖</span></div>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-time" data-en="09:00 PM" data-ar="09:00 مساءً">07:00 PM</div>
+                        </div>
+                        <div class="timeline-center">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <div class="timeline-content glass-card">
+                                <h4 data-en="Guest Arrival" data-ar="استقبال الضيوف">Guest Arrival</h4>
+                                <p data-en="Welcome cocktails, ambient music, and guest reception." data-ar="ترحيب بالأحباب، مشروبات الترحيب والموسيقى الهادئة."></p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-time" data-en="09:00 PM" data-ar="09:00 مساءً">08:00 PM</div>
+                        </div>
+                        <div class="timeline-center">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <div class="timeline-content glass-card">
+                                <h4 data-en="Guest Arrival" data-ar="استقبال الضيوف">Grand Enterence and Ceremony</h4>
+                                <p data-en="Welcome cocktails, ambient music, and guest reception." data-ar="ترحيب بالأحباب، مشروبات الترحيب والموسيقى الهادئة."></p>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-time" data-en="09:00 PM" data-ar="09:00 مساءً">09:00 PM</div>
+                        </div>
+                        <div class="timeline-center">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <div class="timeline-content glass-card">
+                                <h4 data-en="Guest Arrival" data-ar="استقبال الضيوف">Grand Dinner</h4>
+                                <p data-en="Welcome cocktails, ambient music, and guest reception." data-ar="ترحيب بالأحباب، مشروبات الترحيب والموسيقى الهادئة."></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <!-- <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-content glass-card">
+                                <h4 data-en="Grand Entrance & Ceremony" data-ar="دخول العروسين وتورطة الزفاف">Grand Entrance &amp; Ceremony</h4>
+                                <p data-en="Entrance of Mustafa Khan, ring exchange & cake cutting." data-ar="طلّة العروسين المميّزة م. عبدالله و د. M، تبادل المحابس وتقطيع التورطة."></p>
+                            </div>
+                        </div>
+                        <div class="timeline-center">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <div class="timeline-time" data-en="09:30 PM" data-ar="09:30 مساءً">8:00 PM</div>
+                        </div>
+                    </div> -->
+
+                    <!-- Item 3 -->
+                    <!-- <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-time" data-en="10:30 PM" data-ar="10:30 مساءً">9:00 PM</div>
+                        </div>
+                        <div class="timeline-center">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-right">
+                            <div class="timeline-content glass-card">
+                                <h4 data-en="Gala Dinner" data-ar="العشاء "> Dinner</h4>
+                                <p data-en="Sumptuous gourmet buffet dinner and toasts to the newlyweds." data-ar="بوفيه فاخر وتقديم التهاني والتبريكات للعروسين."></p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Guestbook / Warm Wishes Section (Above RSVP) -->
+        <section id="wishes" class="wishes-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-eyebrow" data-en="Guestbook" data-ar="سجل التهاني والتبريكات">Guestbook</span>
+                    <h2 class="section-title" data-en="Warm Wishes For The Couple" data-ar="تهاني وأمنيات الأحباب">Warm Wishes For The Couple</h2>
+                    <p class="wishes-subtitle" data-en="Leave a heartfelt message for Mustafa Khan " data-ar="شاركنا كلمة تهنئة قلبيّة للعروسين م. عبدالله و د. M في ليلة العمر">Leave a heartfelt message for Mustafa Khan </p>
+                    <div class="golden-divider"><span>❖</span></div>
+                </div>
+
+                <!-- Send Wish Box -->
+                <div class="wishes-form-wrapper glass-card">
+                    <form id="wish-form" class="wish-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="wish-author"><span data-en="Your Name" data-ar="الاسم الكريم">Your Name</span> <span class="required">*</span></label>
+                                <input type="text" id="wish-author" name="wishAuthor" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="wish-relation" data-en="Relationship / Note" data-ar="صلة القرابة / وصف">Relationship / Note</label>
+                                <input type="text" id="wish-relation" name="wishRelation" placeholder="e.g. Family, Friend, Colleague">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wish-text"><span data-en="Your Message / Wishes" data-ar="كلمة التهنئة">Your Message / Wishes</span> <span class="required">*</span></label>
+                            <textarea id="wish-text" name="wishText" rows="3" placeholder="Write your warm wishes for Mustafa Khan..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span data-en="Send Wishes" data-ar="إرسال التهنئة">Send Wishes</span>
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Live Wishes Feed Display Grid -->
+                <!-- <div class="wishes-feed-header">
+                    <h3>
+                        <i class="fas fa-comments"></i> 
+                        <span data-en="Messages From Family & Friends" data-ar="تهاني العائلة والأصدقاء">Messages From Family &amp; Friends</span>
+                    </h3>
+                </div> -->
+
+                
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp" class="rsvp-section">
+            <div class="section-container">
+                <div class="rsvp-wrapper glass-card">
+                    <div class="section-header">
+                        <span class="section-eyebrow" data-en="Join Our Celebration" data-ar="تأكيد الحضور">Join Our Celebration</span>
+                        <h2 class="section-title">R.S.V.P</h2>
+                        <p class="rsvp-subtitle" data-en="Please confirm your attendance for our wedding on December 05, 2026 (25 Jumada Al-Thani 1448 AH) at 9:00 PM." data-ar="يسعدنا تأكيد حضوركم لمشاركتنا فرحة العمر يوم السبت 9 صفر 1448 هـ (22 أغسطس 2026) الساعة 9:00 مساءً.">Please confirm your attendance for our wedding on December 05, 2026 (25 Jumada Al-Thani 1448 AH) at 9:00 PM.</p>
+                        <div class="golden-divider"><span>❖</span></div>
+                    </div>
+
+                    <form id="rsvp-form" class="rsvp-form">
+                        <div class="form-group">
+                            <label for="guest-name"><span data-en="Full Name" data-ar="الاسم الكريم">Full Name</span> <span class="required">*</span></label>
+                            <input type="text" id="guest-name" name="guestName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="attendance"><span data-en="Attendance Status" data-ar="حالة الحضور">Attendance Status</span> <span class="required">*</span></label>
+                                <select id="attendance" name="attendance" required>
+                                    <option value="" disabled selected data-en="Will you be attending?" data-ar="هل ستشرفنا بالحضور؟">Will you be attending?</option>
+                                    <option value="accept" data-en="Joyfully Accept" data-ar="يشرفني الحضور بكل حب">Joyfully Accept</option>
+                                    <option value="decline" data-en="Regretfully Decline" data-ar="أعتذر عن الحضور">Regretfully Decline</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="guest-count" data-en="Number of Guests" data-ar="عدد المرافقين">Number of Guests</label>
+                                <select id="guest-count" name="guestCount">
+                                    <option value="1" data-en="1 Person" data-ar="شخص واحد">1 Person</option>
+                                    <option value="2" data-en="2 Persons" data-ar="شخصان">2 Persons</option>
+                                    <option value="3" data-en="3 Persons" data-ar="3 أشخاص">3 Persons</option>
+                                    <option value="4" data-en="4 Persons" data-ar="4 أشخاص"> Family</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dietary" data-en="Dietary Preferences or Notes" data-ar="ملاحظات أو تفضيلات خاصة"> Preferences or Notes</label>
+                            <input type="text" id="dietary" name="dietary" placeholder="....................">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-en="Wishes for Mustafa Khan & Dr. M" data-ar="كلمة أو تهنئة للعروسين">Wishes for Mustafa Khan </label>
+                            <textarea id="message" name="message" rows="4" placeholder="Write a warm note or wish for the couple..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span data-en="Confirm RSVP" data-ar="تأكيد الإرسال">Confirm RSVP</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="rsvp-success-message" class="rsvp-success hidden">
+                        <div class="success-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 data-en="Thank You!" data-ar="تم حفظ ردكم بنجاح!">Thank You!</h3>
+                        <p id="rsvp-summary-text" data-en="Your response has been saved. We cannot wait to celebrate with you!" data-ar="شكراً لكم! ننتظركم بشوق لنحتفل معاً في نادي الأطباء.">Your response has been saved. We cannot wait to celebrate with you!</p>
+                        <button id="edit-rsvp-btn" class="btn btn-outline btn-sm" data-en="Edit Response" data-ar="تعديل الرد">Edit Response</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">M &amp; H</div>
+            <p data-en="Mustafa Khan  • Saturday December 05 (25 Jumada Al-Thani 1448 AH), 8:00 PM • Qazi Kauser Park PCSIR Phase 2" data-ar="م. عبدالله & د. M • السبت 8 صفر 1448 هـ / 22 أغسطس 2026 م • نادي الأطباء">Mustafa Khan  • Saturday December 05,2026 (25 Jumada Al-Thani 1448 AH), 7:00 PM • Qazi Kauser Park PCSIR Phase 2</p>
+            <p class="footer-copy" data-en="Crafted with love for an unforgettable wedding celebration." data-ar="صُنعت بحب لاحتفال زفاف لا يُنسى.">Crafted with love for an unforgettable wedding celebration.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
